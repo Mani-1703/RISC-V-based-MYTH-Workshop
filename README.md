@@ -43,6 +43,7 @@ The workshop takes a software-to-hardware approach:
 
 ---
 
+## Repository Structure
 RISC-V-based-MYTH-Workshop/
 ├── README.md
 ├── Day1/
