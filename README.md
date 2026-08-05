@@ -43,19 +43,25 @@ The workshop takes a software-to-hardware approach:
 
 ---
 
-## Repository Structure
-
-```
-.
+RISC-V-based-MYTH-Workshop/
 ├── README.md
-├── CODES/
-│   ├── DAY1/
-│        └── (lab screenshots and code)
-    |-- DAY2/ 
-├── IMAGES/
-      ├── Day1/
+├── Day1/
+│   ├── README.md
+│   ├── sum1ton.c
+│   ├── unsignedHighest.c
+│   └── images/
+│       ├── lab1&2.png
+│       ├── lab2.png
+│       ├── lab2_ofast.png
+│       ├── lab3_spike.png
+│       └── spike_lab3_contd.png
+├── Day2/
+│   ├── README.md
+│   └── images/
+├── Day3/
+├── Day4/
+├── Day5/
 └── Project/
-```
 
 ---
 
