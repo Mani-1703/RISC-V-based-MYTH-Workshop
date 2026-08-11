@@ -1,6 +1,6 @@
 # RISC-V based MYTH Workshop
 
-**Microprocessor for You in Thirty Hours (MYTH)** — a 5-day hands-on workshop organized by **VSD (VLSI System Design)** and **Redwood EDA**, conducted by **Kunal Ghosh** and **Steve Hoover**, in partnership with **NASSCOM**.
+**Microprocessor for You in Thirty Hours (MYTH)** — a 5-day hands-on workshop organized by **VSD (VLSI System Design)** and **Redwood EDA**, conducted by **Kunal Ghosh** and **Steve Hoover**, in partnership with **NASSCOM**. (Total time to complete - 10 Days) 
 
 This repository documents my journey through the workshop: from writing and compiling a simple C program on the RISC-V toolchain, all the way to building a single-cycle RISC-V CPU core using TL-Verilog on Makerchip.
 
