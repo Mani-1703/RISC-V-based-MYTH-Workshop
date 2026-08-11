@@ -45,7 +45,6 @@ The completed single-cycle core:
 
 ![Completed single-cycle CPU implementation](./images/Completed_implementation.png)
 
-![PC / branch behavior in Makerchip visualization](./images/PC.png)
 
 ---
 
