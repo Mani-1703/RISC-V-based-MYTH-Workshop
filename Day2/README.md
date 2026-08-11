@@ -67,8 +67,7 @@ Traced this by hand:
 - `load.S`'s loop logic is correct for all tested values — the `blt a3, a2, loop` termination condition is not hardcoded to any specific range, so the assembly itself isn't the cause.
 - `TRAP` in `testbench.v` is the **normal end-of-simulation message** (triggered by the CPU's own `trap` signal after the firmware finishes) — it appears on every run, successful or not. It is not itself an error indicator.
 - The testbench has no fixed simulation-length cutoff (`$finish` is only called on the `trap` signal or on `CRITICAL UNDEF MEM TRANSACTION`), so it isn't a simulation-timeout issue either.
-
-**[Fill in: what you found when isolating this — did a plain `printf("%d", 10)` also fail to print through the memory-mapped console for two-digit numbers? What was the final root cause?]**
+- This remains an open observation — the exact root cause (likely something in the bare-metal printf/console-write path for multi-digit values) was not conclusively isolated within the workshop timeline.
 
 ---
 
