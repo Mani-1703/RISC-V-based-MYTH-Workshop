@@ -14,7 +14,7 @@
    // Connect SV inputs to TLV pipesignals.
    $reset = *reset;
 
-   $out = sel ? in1 : in2;
+   $out = $sel ? $in1 : $in2;
 
    // Assert these to end simulation ( before the cycle limit).
    *passed = *cyc_cnt > 40;
