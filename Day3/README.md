@@ -83,6 +83,11 @@ Extends the calculator to be sequential — each cycle's `$val1` feeds from the 
 Beyond the assigned labs, additional pipelined variations were implemented:
 
 ### 2-Cycle Calculator with Validity
+
+First Implemented a 2-Cycle calculator: 
+![2-cycle calculator waveform](./images/2_cycle_cal.png)
+
+Added validity logic to the same calculator. 
 ```tlv
 |calc
    @1
@@ -98,7 +103,7 @@ Beyond the assigned labs, additional pipelined variations were implemented:
 ```
 Introduces a `$valid` signal and the `?$valid_or_reset` conditional-execution syntax, splitting computation across two pipeline stages (`@1`, `@2`).
 
-![2-cycle calculator waveform](./images/2_cycle_cal.png)
+![calc_with_validity](./images/calc_with_validity.png)
 
 ### Calculator with Single-Value Memory
 
@@ -138,21 +143,6 @@ Demonstrates propagating an error/exception condition across multiple pipeline s
 ![Python sample replica waveform](./images/pyth_sample_replica.png)
 
 ---
-
-## File Naming — Corrected
-
-Two files/images were mislabeled from working across labs quickly; corrected as follows:
-
-| Before | After | Reason |
-|---|---|---|
-| `cal_with_validity.v` | `calc_with_single_val_mem.v` | File actually contains the memory-based calculator logic (confirmed via the Makerchip editor tab in the screenshot itself), matching the `cal_with_single_val_mem.png` image |
-| `calc_with_single_val_mem.v` (old) | *(removed from Day 3)* | This file actually contained the first step of the Day 4 CPU build (PC implementation) — unrelated to any Day 3 calculator lab. Day 4's `pc.v` already covers this checkpoint |
-| `calc_with_validity.png` | *(removed — duplicate)* | This screenshot's Makerchip tab shows `2_cycle_cal.v`, i.e. it documents the same lab as `2_cycle_cal.png`, not a separate "validity" variant |
-
-Also removed `Codes.txt` — a raw, unformatted duplicate of code that now exists properly in the individual `.tlv` files above.
-
----
-
 ## Key Takeaways from Day 3
 
 - TL-Verilog's `$signal` syntax and how it replaces explicit wire/reg declarations
