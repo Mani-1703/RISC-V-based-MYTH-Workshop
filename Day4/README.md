@@ -15,7 +15,7 @@ Day 4 builds a single-cycle RISC-V CPU core, incrementally, in TL-Verilog on Mak
 | 3 | `decode.v` | Instruction-type decode: identifies R/I/S/B/U/J instruction formats from opcode bits |
 | 4 | `immediate_added.v` | Immediate value extraction and sign-extension, per instruction format |
 | 5 | `other_fields_added.v` | Extracts `rs1`, `rs2`, `rd`, `funct3`, `funct7`, `opcode` fields |
-| 6 | `circled_inst.v` | Adds validity conditions for each field (e.g. `funct7` is only valid for R-type instructions) |
+| 6 | `circled_inst.v` | Adds circled instructions & validity conditions for each field (e.g. `funct7` is only valid for R-type instructions) |
 | 7 | `reg_files_read.v` | Wires up register file read enables/indices from `rs1`/`rs2` |
 | 8 | `rf_rd_src.v` | Connects register file read data to source operand values (`$src1_value`, `$src2_value`) |
 | 9 | `ALU_addi_add.v` | Implements the ALU computation for `ADD` and `ADDI` |
