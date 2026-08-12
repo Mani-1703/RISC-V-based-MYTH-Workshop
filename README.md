@@ -20,8 +20,8 @@ The workshop takes a software-to-hardware approach:
 
 ## Table of Contents
 
-| Day | Topic | Status |
-|-----|-------|--------|
+| Day | Topic |
+|-----|-------|
 | [Day 1](./Day1/README.md) | Introduction to RISC-V ISA and GNU compiler toolchain |
 | [Day 2](./Day2/README.md) | Introduction to ABI and basic verification flow |
 | [Day 3](./Day3/README.md) | Digital Logic with TL-Verilog and Makerchip |
