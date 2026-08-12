@@ -2,7 +2,7 @@
 
 **Microprocessor for You in Thirty Hours (MYTH)** — a 5-day hands-on workshop organized by **VSD (VLSI System Design)** and **Redwood EDA**, conducted by **Kunal Ghosh** and **Steve Hoover**, in partnership with **NASSCOM**. (Total time to complete - 10 Days) 
 
-This repository documents my journey through the workshop: from writing and compiling a simple C program on the RISC-V toolchain, all the way to building a single-cycle RISC-V CPU core using TL-Verilog on Makerchip.
+This repository documents my journey through the workshop: from writing and compiling a simple C program on the RISC-V toolchain, all the way to building a single-cycle RISC-V CPU core and then extending it into a pipelined RISC-V CPU, using TL-Verilog on Makerchip.
 
 ---
 
@@ -22,12 +22,11 @@ The workshop takes a software-to-hardware approach:
 
 | Day | Topic | Status |
 |-----|-------|--------|
-| [Day 1](./Day1/README.md) | Introduction to RISC-V ISA and GNU compiler toolchain | ✅ Complete |
-| [Day 2](./Day2/README.md) | Introduction to ABI and basic verification flow | ✅ Complete |
-| [Day 3](./Day3/README.md) | Digital Logic with TL-Verilog and Makerchip | ✅ Complete |
-| [Day 4](./Day4/README.md) | Basic RISC-V CPU microarchitecture | ✅ Complete |
-| Day 5 | Complete Pipelined RISC-V CPU microarchitecture | ⬜ Pending |
-
+| [Day 1](./Day1/README.md) | Introduction to RISC-V ISA and GNU compiler toolchain |
+| [Day 2](./Day2/README.md) | Introduction to ABI and basic verification flow |
+| [Day 3](./Day3/README.md) | Digital Logic with TL-Verilog and Makerchip |
+| [Day 4](./Day4/README.md) | Basic RISC-V CPU microarchitecture |
+| [Day 5](./Day5/README.md) | Complete Pipelined RISC-V CPU microarchitecture |
 ---
 
 ## Tools Used
@@ -57,14 +56,15 @@ The workshop takes a software-to-hardware approach:
 │   └── images/
 ├── Day3/
 │   ├── README.md
-│   ├── *.tlv (lab code)
+│   ├── *.v (TL-Verilog lab code, Makerchip's default download extension)
 │   └── images/
 ├── Day4/
 │   ├── README.md
-│   ├── *.tlv (progressive CPU build-up)
+│   ├── *.v (progressive single-cycle CPU build-up)
 │   └── images/
 └── Day5/
     ├── README.md
+    ├── *.v (progressive pipelined CPU build-up)
     └── images/
 ```
 
