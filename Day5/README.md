@@ -62,7 +62,3 @@ The completed 3-stage pipelined core:
 - Verifying a pipelined design isn't just "does the ALU work" — the final test here explicitly proves data survives a full store→load round trip through memory, which exercises the load-shadow and dmem-interface logic together
 
 ---
-
-## What's left for a complete submission
-
-This completes the 5-day lab sequence. The workshop's own course page additionally asks for **one capstone project** (Branch Predictor, a custom RISC-V instruction, or GEMM/Convolution on this core) in a `Project/` folder — that isn't present in this repo yet. Worth confirming whether that's still required before treating the submission as fully complete.
