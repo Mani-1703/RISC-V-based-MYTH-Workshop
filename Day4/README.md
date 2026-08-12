@@ -2,6 +2,8 @@
 
 Day 4 builds a single-cycle RISC-V CPU core, incrementally, in TL-Verilog on Makerchip. Each file below is a complete checkpoint of the design at that stage — a running history of the build, not just the final result.
 
+> **Note on file organization:** Makerchip's save/download flow reuses the same default filename across projects, which led to some local files being overwritten while working through these labs. As a result, a few checkpoint files may not perfectly reflect their individual step names — some later-stage logic may appear earlier than expected, or vice versa.
+
 ---
 
 ## Build Progression

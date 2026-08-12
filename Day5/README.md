@@ -12,8 +12,8 @@ Each file is a checkpoint of the pipeline build at that stage (verified from the
 
 | Step | File | What it adds |
 |---|---|---|
-| 1–2 | `avoiding_invalid_instr.v` | Introduces the 3-cycle `$valid` signal and suppresses PC redirection / register writes for invalid (bubble) cycles as the pipeline is first spun up |
-| 3 | `3_cycle_valid.v` | Splits execution across dedicated register-read (`@2`) and ALU (`@3`) stages — this file already contains some step-3 staging alongside its step-1/2 content, a residual of the Makerchip overwrite issue noted above |
+| 1–2 | `3_cycle_valid.v` | Introduces the 3-cycle `$valid` signal and suppresses PC redirection / register writes for invalid (bubble) cycles as the pipeline is first spun up |
+| 3 | `avoiding_invalid_instr.v` | Splits execution across dedicated register-read (`@2`) and ALU (`@3`) stages — this file already contains some step-3 staging alongside its step-1/2 content, a residual of the Makerchip overwrite issue noted above |
 | 4 | `adding_stages.v` | Adds register-file bypass (`>>1$rf_wr_en` / `>>1$result` forwarding) to resolve RAW hazards between back-to-back dependent instructions |
 | 5 | `register_file_bypass.v` | Refines the branch-target path so a valid instruction is available every cycle after a taken branch |
 | 6 | `branch_target.v` | Completes instruction decode for the remaining RV32I instruction set (arithmetic/logical immediates, shifts, LUI/AUIPC/JAL, and adds `$is_load`/`$is_sb`/`$is_sh`/`$is_sw` detection) |
